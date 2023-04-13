@@ -1,0 +1,157 @@
+### Add User
+
+POST http://127.0.0.1:5001/parkingapp-af332/us-central1/adduser
+Content-Type: application/json
+
+{
+  "email": "toxxxika028@gmail.com",
+  "nom": "John",
+  "prenom": "Doe",
+  "password": "123456"
+}
+
+### ADD USER 2
+
+POST http://127.0.0.1:5001/parkingapp-af332/us-central1/adduser
+Content-Type: application/json
+
+{
+  "email": "mabrouki552@gmail.com",
+  "nom": "Oussema",
+  "prenom": "Mabrouki",
+  "password": "123456"
+}
+
+### Get Users
+GET http://127.0.0.1:5001/parkingapp-af332/us-central1/getUsers
+
+### Signin
+POST http://127.0.0.1:5001/parkingapp-af332/us-central1/signin
+Content-Type: application/json
+
+{
+  "email": "toxxxika028@gmail.com",
+  "password": "123456"
+}
+
+### Add Course
+POST http://127.0.0.1:5001/parkingapp-af332/us-central1/addCourse
+Content-Type: application/json
+
+{
+  "title": "Example Course",
+  "instructor": "Jane Doe",
+  "duration": "4 weeks",
+  "level": "Beginner",
+  "description": "This is an example course.",
+  "price": 100
+}
+### Add Course
+POST http://127.0.0.1:5001/parkingapp-af332/us-central1/addCourse
+Content-Type: application/json
+
+{
+  "title": "Example Course 2",
+  "instructor": "Maryem Ben Younes",
+  "duration": "4 weeks",
+  "level": "Intermediate",
+  "description": "This is an example course.",
+  "price": 100
+}
+### Get Courses
+GET http://127.0.0.1:5001/parkingapp-af332/us-central1/getCourses
+
+### Deploy Module
+POST http://127.0.0.1:5001/parkingapp-af332/us-central1/DeployModule
+Content-Type: application/json
+
+{
+  "name": "Example Module",
+  "description": "This is an example module."
+}
+
+### Start Course
+POST http://127.0.0.1:5001/parkingapp-af332/us-central1/startCourse
+Content-Type: application/json
+
+{
+  "userId": "<USER_ID>",
+  "courseId": "<COURSE_ID>"
+}
+
+### Finish Course
+POST http://127.0.0.1:5001/parkingapp-af332/us-central1/finishcourse
+Content-Type: application/json
+
+{
+  "userId": "<USER_ID>",
+  "courseId": "<COURSE_ID>"
+}
+
+### Add Command
+POST http://127.0.0.1:5001/parkingapp-af332/us-central1/addCommand
+Content-Type: application/json
+
+{
+  "quantity": 5,
+  "name": "CROSS"
+}
+
+### Get Commands
+GET http://127.0.0.1:5001/parkingapp-af332/us-central1/getCommands
+
+### GET PRODUCTS
+GET http://127.0.0.1:5001/parkingapp-af332/us-central1/getProducts
+
+### ADD PRODUCT
+POST http://127.0.0.1:5001/parkingapp-af332/us-central1/addProduct
+Content-Type: application/json
+
+{
+  "name": "ROBE DE MARIEE",
+  "description": "This is an example product of Robe",
+  "price": 100,
+  "category": "Robe",
+  "image": "https://scontent.xx.fbcdn.net/v/t1.15752-9/340378908_763582728614906_5519020698099197142_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=aee45a&_nc_ohc=wM5GBSAnN2cAX8W8IfC&_nc_oc=AQkTlGOuj33W4S0sPJHSVFzOrvyicF5Btu3sgkeJk4z2gtryzfPbcOMGp8ycUSOI0bniZ9d2OLYQfRrCdtcAtkuY&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdQ5wGeWp5zZ3RSoGGmW584_AeA8e7aZFkBN1NrzrPk4FA&oe=645ACE38",
+    "quantity": 10
+}
+### ADD PRODUCT 2
+POST http://127.0.0.1:5001/parkingapp-af332/us-central1/addProduct
+Content-Type: application/json
+
+{
+    "name": "COMBO SIF",
+    "description": "This is an example product of COMBO SIF",
+    "price": 22,
+    "category": "SHORT",
+     "image": "https://scontent.xx.fbcdn.net/v/t1.15752-9/340485800_1030664721240645_599096722130012247_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=aee45a&_nc_ohc=YY_ZTs3An1UAX8JjMD8&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdRng9nJDRElAMIEhDFSeJzmMMjE_JJgHANj7QZxs8dJWA&oe=645AE693",
+        "quantity": 3
+}
+
+### ADD PRODUCT 3
+POST http://127.0.0.1:5001/parkingapp-af332/us-central1/addProduct
+Content-Type: application/json
+
+{
+  "name": "Pull noir",
+  "description": "This is an example product of Pull noir",
+  "price": 15,
+  "category": "PULL",
+  "image": "https://scontent.xx.fbcdn.net/v/t1.15752-9/340353400_240370978484681_7288844487548031073_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=aee45a&_nc_ohc=3fYxaJ4JY8YAX_s1g58&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSj6mCotIQhsgonudeOMRIz6uIYTTJBqGQdrcPj9_r0Vw&oe=645ACBAE",
+  "quantity": 0
+}
+
+### ADD PRODUCT 4
+POST http://127.0.0.1:5001/parkingapp-af332/us-central1/addProduct
+Content-Type: application/json
+
+{
+  "name": "TOP",
+  "description": "This is an example product of TOP",
+  "price": 0,
+  "category": "TOP",
+  "image": "https://scontent.xx.fbcdn.net/v/t1.15752-9/340434131_3576564542665142_1939232053461636573_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=aee45a&_nc_ohc=gt6dCyMVtSkAX_s8Jj9&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.xx&oh=03_AdSC1iYY-6oNzXhYKUt4ggl-S1Qk3DeY82IyjVhYB1SiUQ&oe=645AE303",
+  "quantity": 3
+}
+
+
